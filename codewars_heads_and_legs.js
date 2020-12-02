@@ -33,5 +33,9 @@ Happy coding!
 */
 
 function animals(heads, legs){
-  //return [Chickens, Cows]
+  if(heads === 0 && legs === 0) {
+    return [0, 0];
+  } else if(heads < 0 || legs < 0) {
+    return 'No solutions'
+  }
 }
